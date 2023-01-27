@@ -1,11 +1,7 @@
 import { useState } from 'react'
 
 function App() {
-    return (
-        <div className="App">
-            <div>Hello World</div>
-        </div>
-    )
+    return <div className="App">Hello World</div>
 }
 
 export default App
