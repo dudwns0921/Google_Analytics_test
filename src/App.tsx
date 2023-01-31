@@ -9,11 +9,12 @@ function App() {
 
     function handleBtnClick() {
         console.log('ApplicationLoaded Event Fired')
-        window.dataLayer.push({
-            event: 'ApplicationLoaded',
-        })
         const event = new Event('ApplicationLoaded')
         document.dispatchEvent(event)
+        window.dataLayer.push({
+            event: 'ApplicationLoaded',
+            appName: 'app',
+        })
     }
     return (
         <div className="App">
