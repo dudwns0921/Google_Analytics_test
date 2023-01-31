@@ -9,6 +9,9 @@ function App() {
 
     function handleBtnClick() {
         console.log('ApplicationLoaded Event Fired')
+        window.dataLayer.push({
+            event: 'checkout_button',
+        })
         const event = new Event('ApplicationLoaded')
         document.dispatchEvent(event)
     }
